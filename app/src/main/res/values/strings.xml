@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Вопрос</string>
+    <string name="btn1Name">Да</string>
+    <string name="btn2Name">Нет</string>
+    <string name="toastText1">Правильно!</string>
+    <string name="toastText2">Неправильно...</string>
+</resources>
