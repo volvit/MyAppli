@@ -28,26 +28,42 @@ public class MainActivityVolv extends AppCompatActivity {
 
         tw = (TextView)findViewById(R.id.tw);
         tw.setText(arr[0].getQuestion());
-        Button btn1 = (Button) findViewById(R.id.btn2);
-        btn1.setOnClickListener(new View.OnClickListener(){
+        Button btn2 = (Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivityVolv.this,
-                        R.string.toastText1,
-                        Toast.LENGTH_SHORT).show();
+
+                if(arr[pos].isAnswer()){
+                    Toast.makeText(MainActivityVolv.this,
+                            R.string.toastText2,
+                            Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(MainActivityVolv.this,
+                            R.string.toastText1,
+                            Toast.LENGTH_SHORT).show();
+
+                }
             }
         });
 
-        Button btn = (Button) findViewById(R.id.btn1);
-        btn.setOnClickListener(new View.OnClickListener() {
+        Button btn1 = (Button) findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Log.e("Log","Ответьте на вопрос");
-                Toast.makeText(MainActivityVolv.this,
-                        R.string.toastText2,
-                        Toast.LENGTH_SHORT).show();
+
+                if(arr[pos].isAnswer()){
+                    Toast.makeText(MainActivityVolv.this,
+                            R.string.toastText1,
+                            Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(MainActivityVolv.this,
+                            R.string.toastText2,
+                            Toast.LENGTH_SHORT).show();
+
+                }
 
             }
         });
@@ -57,14 +73,22 @@ public class MainActivityVolv extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                pos--;
+                tw.setText(arr[pos].getQuestion());
+            }
+        });
+
+        Button btnPrev = (Button) findViewById(R.id.btnPrev);
+        btnPrev.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
                 pos++;
                 tw.setText(arr[pos].getQuestion());
             }
         });
 
-       //     pos++;
-       //     tw.setText(arr[pos].getQuestion());
-       // }
-
     }
 }
+//if(arr[pos])){
+     //   }

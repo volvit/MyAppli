@@ -27,7 +27,6 @@
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2 * 4 - 2 = 6 ?"
         android:id="@+id/tw" />
 
         <Button
@@ -52,21 +51,22 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/prev"
-            android:id="@+id/btnPrev" />
+            android:text="@string/next"
+            android:id="@+id/btnNext" />
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prev"
+            android:id="@+id/btnPrev" />
 
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        android:id="@+id/btnNext"
-        android:layout_gravity="right" />
+
 
 
 </LinearLayout>
