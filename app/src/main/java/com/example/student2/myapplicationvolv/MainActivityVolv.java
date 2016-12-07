@@ -1,5 +1,6 @@
 package com.example.student2.myapplicationvolv;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -88,7 +89,17 @@ public class MainActivityVolv extends AppCompatActivity {
             }
         });
 
+        Button btnasw = (Button) findViewById(R.id.btnasw);
+        btnasw.setOnClickListener(new View.OnClickListener() {
+                                      @Override
+                                      public void onClick(View view) {
+                                          Intent i= new Intent (MainActivityVolv.this, SecondActivity.class);
+                                          i.putExtra("KEY_Q",arr[pos].getQuestion());
+                                          i.putExtra("KEY_A",arr[pos].isAnswer());
+                                          startActivityForResult(i,0);
+                                      }
+                                  });
+
+
     }
 }
-//if(arr[pos])){
-     //   }

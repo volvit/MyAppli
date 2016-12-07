@@ -10,10 +10,15 @@
     android:orientation="vertical"
     tools:context="com.example.student2.myapplicationvolv.MainActivityVolv">
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/h"
+        android:id="@+id/btnasw"
+         />
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -45,8 +50,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical">
+        android:layout_height="wrap_content">
 
         <Button
             android:layout_width="wrap_content"
@@ -63,10 +67,7 @@
             android:text="@string/prev"
             android:id="@+id/btnPrev" />
 
-
     </LinearLayout>
-
-
 
 
 </LinearLayout>
