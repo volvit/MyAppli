@@ -10,15 +10,25 @@
     android:orientation="vertical"
     tools:context="com.example.student2.myapplicationvolv.MainActivityVolv">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tw"
+        />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/h"
+        android:text="@string/btnotw"
         android:id="@+id/btnasw"
          />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -26,13 +36,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn1Name"
-            android:id="@+id/btn1"
-            android:layout_marginTop="100dp" />
+            android:id="@+id/btn1" />
 
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tw" />
+         />
 
         <Button
             android:layout_width="wrap_content"
@@ -42,10 +51,6 @@
 
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:orientation="horizontal"

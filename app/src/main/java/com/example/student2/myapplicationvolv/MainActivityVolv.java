@@ -13,12 +13,15 @@ public class MainActivityVolv extends AppCompatActivity {
 
     TrueFalse arr [] = {
         new TrueFalse(" Небо голубое? ",true),
-        new TrueFalse(" Обама - президент? ",false),
+        new TrueFalse(" Обама - президент? ",true),
         new TrueFalse(" Сейчас лето? ",false),
-        new TrueFalse(" Земля - 3 по счету? ",true)
+        new TrueFalse(" Земля - 3 по счету? ",true),
+        new TrueFalse(" Последний вопрос? ",true)
+
     };
 
     int pos = 0;
+    boolean IsClick = false;
 
     TextView tw;
 

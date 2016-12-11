@@ -7,5 +7,6 @@
     <string name="next">Пред. вопрос</string>
     <string name="prev">След. вопрос </string>
     <string name="sdhsdh">sdhsdh</string>
-    <string name="h">Ответ</string>
+    <string name="Look">одсмотреть</string>
+    <string name="btnotw">Ответ</string>
 </resources>
